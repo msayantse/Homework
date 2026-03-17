@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+form {
+  width: 30%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+.form-group {
+  margin: 5 5;
+}
+
+.form-group-title {
+}
+
+label {
+  display: block;
+  border-radius: 40%;
+}
+
+textarea {
+  resize: vertical;
+  resize: vertical;
+  max-height: 200px;
+  min-height: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+}
