@@ -42,8 +42,11 @@
   }
 }
 
-@media (width <= 768) {
+@media (width <= 768px) {
   .air-mag__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 15px;
   }
