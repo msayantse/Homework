@@ -26,11 +26,14 @@
 .air-mag__description::before {
   content: "";
   display: block;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 131px;
   height: 40px;
   background-image: url("../../icons/rectangle-decor-icon.svg");
-  transform: translate(-13px);
+  -webkit-transform: translateX(-13px);
+  -ms-transform: translateX(-13px);
+  transform: translateX(-13px);
 }
 
 @media (width > 768) {
