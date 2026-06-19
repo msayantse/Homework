@@ -114,4 +114,5 @@
   margin-left: auto;
   height: 60px;
   flex-shrink: 0;
+  gap: 24px;
 }
