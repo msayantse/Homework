@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--layer-1);
+}
+
+.header--fixed {
+  -webkit-box-shadow: 0 0 20px var(--shadow-color);
+  box-shadow: 0 0 20px var(--shadow-color);
+  overflow-y: hidden;
+}
+
+.header__container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1830px;
+  height: 100%;
+  max-height: 70px;
+  margin: 32px 40px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+/* Харизма */
+.logo__icon {
+  width: 293px;
+  height: 67px;
+  margin-right: clamp(50px, -454px + 45.42vw, 418px);
+  flex-shrink: 0;
+}
+
+.header__logo {
+  display: block;
+  height: auto;
+}
+
+/* Иконка телефона и контакты */
+
+.phone__icon-box {
+  width: 267px;
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header__contacts {
+  display: block;
+}
+
+.phone_icon-rec {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+
+.phone__icon {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+}
+
+.phone__text {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  font-size: 16px;
+  bottom: 40px;
+  left: 70px;
+}
+
+/* иконка карты и гео */
+
+.geo__icon-box {
+  width: 267px;
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.geo__geoposition {
+  display: block;
+}
+
+.geo__icon-rec {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+
+.geo__icon-location {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+}
+
+.geo__text {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  font-size: 16px;
+  bottom: -25px;
+  left: 70px;
+}
+
+.header__actions {
+  display: flex;
+  margin-left: auto;
+  height: 60px;
+  flex-shrink: 0;
+}

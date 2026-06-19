@@ -1,0 +1,33 @@
+@media (width > 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+/* Мобильная версия (показываем иконку) */
+@media (width <= 768px) {
+  .header__contacts,
+  .geo__text,
+  .header__actions {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: flex;
+    width: 29px;
+    height: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 100; /* Чтобы кнопка была поверх меню */
+  }
+
+  .burger__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
