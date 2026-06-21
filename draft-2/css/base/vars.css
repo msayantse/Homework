@@ -1,0 +1,40 @@
+:root {
+  /* font-family */
+  --font-family: "Muller", sans-serif;
+
+  /* colors */
+  /* Основные фоны и темные оттенки */
+  --color-black: #000000; /* ENU_206 */
+  --color-dark-deep: #090909; /* Иллюстрация */
+  --bg-color: #131517; /* Фон, Подвал, Фото, Рамка айфона */
+  --color-dark-ui: #191b20; /* DESKTOP, MOBIL, ENU */
+  --color-dark-card: #202124; /* Карточки/блоки */
+  --color-dark-gray: #282b32; /* Меню */
+
+  /* Элементы интерфейса и границы */
+  --color-blue-gray-dark: #2c383f; /* VECTOR_95 */
+  --color-blue-gray: #2e3441; /* Вверх */
+  --color-gray-dark: #343a3e; /* Заголовок */
+  --color-gray-medium: #34373f; /* Вспомогательные элементы */
+  --color-gray-border: #343740; /* Сетки/границы */
+  --color-gray-text: #606571; /* Векторы, иконки */
+  --color-gray-light: #c4c4c4; /* Второстепенный текст */
+
+  /* Акцентные и яркие цвета */
+  --color-orange: #f69020; /* Бургер, интерактивные векторы */
+  --color-yellow: #ffc619; /* Бирка, Ховер */
+  --main-color: #ffffff; /* Текст, Навигация, Кнопки, Город */
+  --icon-color: #606571; /* Иконка телефона и геолокации */
+
+  /* container */
+  --container-width: 1830px;
+  --container-padding: 20px;
+
+  /* transitions */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

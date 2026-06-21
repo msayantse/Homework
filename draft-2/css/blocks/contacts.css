@@ -1,0 +1,50 @@
+.contacts__list {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.contacts__item {
+  /* width: 267px;
+  height: 60px; */
+  color: var(--main-color);
+}
+
+.contacts__link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  position: relative;
+}
+
+.contacts__link::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  bottom: -10px;
+  display: block;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.07);
+  width: 60px;
+  height: 60px;
+}
+
+.contacts__geo-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: var(--color-orange);
+}
+
+.contacts__geo-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.07);
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,10 @@
+.actions__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: clamp(30px, -1470px + 103.333vw, 185px);
+}
+
+.actions__item {
+  flex-shrink: 0;
+}
