@@ -1,50 +1,52 @@
 .contacts__list {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 53px;
 }
 
-.contacts__item {
-  /* width: 267px;
-  height: 60px; */
-  color: var(--main-color);
-}
-
-.contacts__link {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  position: relative;
-}
-
-.contacts__link::before {
-  content: "";
-  position: absolute;
-  left: -35px;
-  bottom: -10px;
-  display: block;
-  border-radius: 40px;
-  background: rgba(255, 255, 255, 0.07);
-  width: 60px;
-  height: 60px;
-}
-
+.contacts__link,
 .contacts__geo-link {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.03em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+}
+
+.contacts__icon {
+  color: var(--main-color);
+}
+
+.contacts__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-medium);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.contacts__link {
+  color: var(--main-color);
+}
+
+.contacts__geo-link {
   color: var(--color-orange);
 }
 
-.contacts__geo-link::before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-radius: 40px;
-  background: rgba(255, 255, 255, 0.07);
-  width: 60px;
-  height: 60px;
+@media (width > 992px) {
+  .contacts__geo-icon {
+    display: none;
+  }
+}
+
+@media (width <= 992px) {
+  .contacts__geo-icon {
+    visibility: visible;
+    display: flex;
+  }
 }

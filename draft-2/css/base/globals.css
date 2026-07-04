@@ -7,10 +7,16 @@
 .page__body {
   min-width: 375px;
   background-color: var(--bg-color);
+  background-size: cover;
 }
 
 .page__body--no-scroll {
   overflow-y: hidden;
+}
+
+.main {
+  padding-top: 110px;
+  background-image: url("../../images/hero-bg.png");
 }
 
 .container {

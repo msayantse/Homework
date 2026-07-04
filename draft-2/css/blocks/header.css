@@ -15,6 +15,7 @@
 
 .header__logo {
   flex-shrink: 0;
+  z-index: var(--layer-3);
 }
 
 .header__menu {
@@ -28,12 +29,6 @@
   flex-grow: 1;
 }
 
-.header__contacts-icon {
-  stroke: var(--icon-color);
-  /* position: absolute; */
-  right: 10px;
-}
-
 @media (width <= 992px) {
   .header__menu {
     position: fixed;
@@ -45,7 +40,7 @@
     padding-top: 99px;
     padding-left: 19px;
     align-items: start;
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-dark-gray);
     box-shadow: 0 12px 27px 0 var(--color-black);
     opacity: 0;
     visibility: hidden;
@@ -53,7 +48,7 @@
       right var(--transition-time),
       opacity var(--transition-time),
       visibility var(--transition-time);
-
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -67,8 +62,6 @@
   }
 
   .contacts__list,
-  .contacts__link,
-  .actions__link,
   .actions__list {
     display: flex;
     flex-direction: column;
