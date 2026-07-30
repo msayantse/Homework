@@ -7,4 +7,5 @@
 
 .actions__item {
   flex-shrink: 0;
+  z-index: var(--layer-3);
 }

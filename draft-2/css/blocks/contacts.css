@@ -15,6 +15,7 @@
   align-items: center;
   gap: 15px;
   padding: 1rem;
+  z-index: var(--layer-3);
 }
 
 .contacts__icon {
