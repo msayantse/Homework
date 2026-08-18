@@ -1,7 +1,7 @@
 import BurgerMenu from "./burger.js";
 import Modal from "./modal.js";
 import { productSlider } from "./product-slider.js";
-import { sizes } from "./sizes.js";
+import { halls } from "./halls.js";
 
 new BurgerMenu({
   BURGER: "burger",
@@ -26,7 +26,7 @@ new Modal({
 
 try {
   productSlider();
-  sizes();
+  halls();
 } catch (error) {
   console.error(error);
 }

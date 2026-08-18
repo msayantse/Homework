@@ -1,0 +1,125 @@
+.faq__header {
+  padding-top: 97px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__body {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq__left {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__question-card {
+  width: 1201px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq__questions {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+details {
+  margin-bottom: 20px;
+}
+
+details[open] summary::after {
+  background: url("../../icons/arrow-up.svg") no-repeat center / 16px 9px;
+  background-color: var(--color-gray-medium);
+}
+
+details > p {
+  padding: 25px;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: var(--color-dark-gray);
+  padding: 25px;
+  cursor: pointer;
+  width: 1080px;
+}
+
+summary:hover {
+  background-color: var(--color-gray-border);
+}
+
+summary::after {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background: url("../../icons/arrow-down.svg") no-repeat center / 16px 9px;
+  background-color: var(--color-gray-medium);
+}
+
+summary::webkit-details-marker {
+  display: none;
+}
+
+.faq__answers {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 194%;
+  letter-spacing: 0.03em;
+  color: var(--color-gray-light);
+}
+
+.faq__right {
+  display: flex;
+  flex-direction: column;
+  width: 667px;
+  justify-content: space-between;
+  background-image: url("../../images/bricks.png");
+  background-repeat: no-repeat;
+  box-shadow: inset -39px 0 27px 12px #191b20;
+}
+
+.faq__title {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  z-index: var(--layer-3);
+}
+
+.faq__text {
+  padding-top: 40px;
+}
+
+.faq__right-text {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 163%;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  width: 610px;
+  padding-left: 77px;
+}
+
+.faq__accent-p {
+  color: var(--color-orange);
+}
+
+.faq__img {
+  width: 553px;
+  height: 339px;
+}

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-image: url("../../images/hero-bg.png");
 }
 
 .hero__body {
@@ -21,21 +22,15 @@
 }
 
 .hero__text-md {
-  font-weight: 500;
-  font-size: xx-large;
+  font-weight: 400;
+  font-size: 41px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .hero__p-geo {
   display: flex;
   position: relative;
-}
-
-.hero__text-big,
-.hero__span {
-  font-weight: 900;
-  font-size: 60px;
-  text-transform: uppercase;
 }
 
 .hero__span {
@@ -109,23 +104,41 @@
 .hero__footer {
   display: flex;
   flex-direction: row;
-  bottom: 0;
-}
-
-.footer {
-  display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer__benefits {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 
 .footer__item {
   display: flex;
-  flex: 1;
   align-items: center;
   gap: 90px;
+  padding: 30px 30px 30px 0;
+}
+
+.footer__img {
+  padding-left: 45px;
+  position: relative;
+}
+
+/* 
+.footer__img::after {
+  content: ""; /* Обязательно: без этого псевдоэлемент не отобразится 
+position: absolute;  Позволяет свободно двигать полоску внутри блока 
+left: 18px;
+width: 34px;
+height: 1px;
+background-color: var(--color-yellow);
+*/
+
+.item__odd {
+  background-color: var(--color-dark-gray);
+}
+
+.item__even {
+  background-color: var(--color-dark-card);
 }
