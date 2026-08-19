@@ -1,4 +1,4 @@
-export const sizes = () => {
+export const halls = () => {
   const hallsList = document.querySelector('[data-halls="list"]');
   const hallsButtons = document.querySelectorAll('[data-halls="button"]');
 

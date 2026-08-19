@@ -11,6 +11,7 @@
 }
 
 .hero__left {
+  display: flex;
   flex-direction: column;
 }
 
@@ -104,7 +105,7 @@
 .hero__footer {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__benefits {
@@ -124,16 +125,6 @@
   padding-left: 45px;
   position: relative;
 }
-
-/* 
-.footer__img::after {
-  content: ""; /* Обязательно: без этого псевдоэлемент не отобразится 
-position: absolute;  Позволяет свободно двигать полоску внутри блока 
-left: 18px;
-width: 34px;
-height: 1px;
-background-color: var(--color-yellow);
-*/
 
 .item__odd {
   background-color: var(--color-dark-gray);

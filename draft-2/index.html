@@ -72,8 +72,8 @@
                 </a>
               </li>
               <li class="actions__item">
-                <a class="actions__link" href="#book">
-                  <button>
+                <a class="actions__link">
+                  <button data-modal-button="book" data-modal-speed="500">
                     <img src="./icons/book-button.svg" alt="Забронировать" />
                   </button>
                 </a>
@@ -81,7 +81,6 @@
             </ul>
           </nav>
         </div>
-
         <div class="contacts__geo-icon">
           <a
             class="contacts__geo-link"
@@ -94,7 +93,6 @@
             </div>
           </a>
         </div>
-
         <button
           class="burger header__burger"
           aria-label="Открыть меню"
@@ -118,16 +116,16 @@
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__body">
-            <div class="hero__left">
+             <div class="hero__left">
               <header class="hero__header">
                 <div class="hero__title">
-                  <h3 class="title-md">Арендуй Караоке-Зал до 10 человек</h3>
+                  <h1 class="title-md">Арендуй Караоке-Зал до 10 человек</h1>
                 </div>
                 <div class="hero__p-geo">
-                  <h1 class="title-big">
+                  <h2 class="title-big">
                     возьми алкоголь <br />
                     и еду с <span class="hero__span text-big">собой</span>
-                  </h1>
+                  </h2>
                 </div>
               </header>
               <div class="hero__benefits benefits">
@@ -173,7 +171,7 @@
               </button>
               </a>
             </div>
-            <div class="hero__right">
+             <div class="hero__right">
               <img
                 class="hero__tag"
                 width="269"
@@ -190,12 +188,11 @@
                   height="1247"
                 />
               </div>
-
               <img src="./icons/tg-button.svg" alt="" width="83" height="239" />
-            </div>
+            </div> 
           </div>
         </div>
-        <footer class="hero__footer">
+         <footer class="hero__footer">
           <div class="footer__benefits">
             <div class="footer__item item__odd">
               <img
@@ -223,9 +220,9 @@
               />Скидка в День Рождения
             </div>
           </div>
-        </footer>
+        </footer> 
       </section>
-      <section id="halls" class="halls">
+       <section id="halls" class="halls">
         <div class="halls__container container">
           <div class="halls__body">
             <div class="halls__left">
@@ -574,5 +571,31 @@
       </section>
     </main>
     <footer></footer>
+     <div class="modal">
+        <div class="modal__window modal__book" data-modal-window="book">
+          <button 
+          class="modal__close" 
+          aria-label="Закрыть" 
+          title="Закрыть" 
+          data-modal-close>
+            <svg width="22" height="22">
+              <use href="./icons/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="modal__content modal-book__content">
+            <h3 class="modal-book__title title-md">Забронировать зал</h3>
+            <form class="modal-book__form">
+               <label class="modal-book__lable">
+                <input class="modal-book__input" 
+                type="tel" 
+                placeholder="Номер телефона" 
+                name="phone" 
+                required>
+              </label>
+              <button class="modal-book__submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        </div> 
   </body>
 </html>

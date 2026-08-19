@@ -1,7 +1,6 @@
 .contacts__list {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .contacts__link,
@@ -43,11 +42,17 @@
   .contacts__geo-icon {
     display: none;
   }
+  .contacts__list {
+    align-items: center;
+  }
 }
 
 @media (width <= 992px) {
   .contacts__geo-icon {
     visibility: visible;
     display: flex;
+  }
+  .contacts__list {
+    align-items: flex-start;
   }
 }
