@@ -63,6 +63,10 @@
     gap: 30px;
     justify-content: flex-start;
   }
+  .header__container {
+    margin: 0;
+    justify-content: normal;
+  }
 
   .header__menu--open {
     right: 0;
@@ -79,11 +83,13 @@
 
   .contacts__geo-icon {
     z-index: var(--layer-1);
+    margin-right: 10px;
   }
 
   .header__logo {
     width: 162px;
     height: 37px;
+    margin-right: auto;
   }
 
   .actions__list {
