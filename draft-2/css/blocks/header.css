@@ -96,3 +96,10 @@
     margin: 0;
   }
 }
+
+@media (width <= 1250px) {
+  .contacts__link-text,
+  .contacts__geo-link-text {
+    display: none;
+  }
+}
