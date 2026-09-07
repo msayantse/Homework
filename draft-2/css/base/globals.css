@@ -41,6 +41,11 @@
   margin-inline: auto;
 }
 
+@media (width <= 1440px) {
+  .header {
+    margin-inline: 0;
+  }
+}
 a:focus-visible,
 button:focus-visible,
 input:focus {

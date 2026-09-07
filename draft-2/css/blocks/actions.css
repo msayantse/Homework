@@ -8,3 +8,9 @@
   flex-shrink: 0;
   z-index: var(--layer-3);
 }
+
+@media (width > 1200px) {
+  .actions__list {
+    margin-left: clamp(30px, -1470px + 103.333vw, 185px);
+  }
+}

@@ -51,8 +51,6 @@
 }
 
 .halls__characteristics-box {
-  display: grid;
-  grid-column: auto;
 }
 
 .halls__characteristics-img {
