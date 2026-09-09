@@ -71,15 +71,6 @@ input:focus {
   margin-bottom: 20px;
 }
 
-@media (width <= 768px) {
-  .title-md {
-    font-size: 18px;
-  }
-  .title-big {
-    font-size: 36px;
-  }
-}
-
 .title-sm {
   font-weight: 400;
   font-size: 24px;
@@ -89,4 +80,17 @@ input:focus {
 .text-sm {
   font-weight: 400;
   font-size: 16px;
+}
+
+@media (width <= 768px) {
+  .title-md {
+    font-size: 18px;
+  }
+  .title-big {
+    font-size: 36px;
+  }
+
+  .text-sm {
+    font-size: 10px;
+  }
 }
