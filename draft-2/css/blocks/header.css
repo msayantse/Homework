@@ -4,8 +4,11 @@
   right: 0;
   left: 0;
   z-index: var(--layer-3);
-  /* border-bottom: 1px dashed var(--main-color); */
-  /* transition: box-shadow var(--transition-time); */
+  padding: 30px;
+  background-image: linear-gradient(to right, #fff 70%, transparent 70%);
+  background-size: 25px 2px;
+  background-repeat: repeat-x;
+  background-position: bottom center;
 }
 
 .header__hero {
