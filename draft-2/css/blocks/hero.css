@@ -148,6 +148,10 @@
     margin: 25px 0 0 0;
   }
 
+  .hero__button {
+    padding: 30px 15px 0 0;
+  }
+
   .hero__benefits {
     padding-top: 5px;
   }
@@ -171,7 +175,7 @@
   }
 
   .hero__button {
-    width: 223px;
+    padding: 130px 54px 0 0;
   }
 }
 
@@ -193,7 +197,8 @@
   object-position: top center;
   width: 700px;
   height: 1247px;
-
+  pointer-events: none;
+  user-select: none;
   z-index: var(--negative-layer);
 }
 
@@ -359,7 +364,7 @@
   }
 
   .micro__img {
-    height: 37px;
+    height: 32px;
   }
 
   .bottle__img {
