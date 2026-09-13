@@ -35,9 +35,14 @@
   margin-right: 0;
   margin-left: auto;
 }
+@media (width <=768px) {
+  .container {
+    width: min(var(--container-width), 100% - var(--container-padding) * 1);
+  }
+}
 
 .header {
-  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  width: min(var(--container-width), 100% - var(--container-padding) * 1);
   margin-inline: auto;
 }
 

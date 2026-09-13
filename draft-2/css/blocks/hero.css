@@ -42,11 +42,17 @@
   .hero__decor {
     width: 480px;
   }
+  .hero__background {
+    padding-right: 60px;
+  }
 }
 
-@media (width <= 986px) {
+@media (width <= 992px) {
   .hero__decor {
     width: 430px;
+  }
+  .hero__background {
+    padding-right: 40px;
   }
 }
 
@@ -105,31 +111,38 @@
   top: -15px;
 }
 
-.hero__benefits {
+.hero__points {
   display: flex;
   position: relative;
   left: auto;
   padding-top: 70px;
 }
 
-.benefits__list {
+.points__list {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.benefits__icon {
+.points__icon {
   padding: 5px;
 }
 
-.benefits__item {
+.points__item {
   display: flex;
   align-items: center;
 }
 
+.points__text-time {
+  padding-right: 200px;
+}
+
 .hero__button {
   display: flex;
-  padding-top: 73px;
+  /* 360 1920 120 73 */
+  padding-top: clamp(4.5625rem, 8.18rem + -3.01vw, 7.5rem);
+  /* 1920 360 54 0 */
+  padding-right: clamp(0rem, 4.15rem + -3.46vw, 3.375rem);
 }
 
 @media (width > 1440px) {
@@ -148,21 +161,17 @@
     margin: 25px 0 0 0;
   }
 
-  .hero__button {
-    padding: 30px 15px 0 0;
-  }
-
-  .hero__benefits {
+  .hero__points {
     padding-top: 5px;
   }
 
-  .benefits__list {
+  .points__list {
     gap: 5px;
   }
 }
 
 @media (width <= 992px) {
-  .benefits__list {
+  .points__list {
     flex-direction: column;
   }
 }
@@ -174,10 +183,6 @@
 
   .hero__title {
     width: 240px;
-  }
-
-  .hero__button {
-    padding: 130px 54px 0 0;
   }
 }
 
@@ -197,10 +202,32 @@
 
 .hero__tag {
   position: absolute;
+  right: 0;
+  height: auto;
+  /* 1920 360 373 192 */
+  width: clamp(12rem, 9.39rem + 11.6vw, 23.3125rem);
+  /* 1920 360 660 80 */
+  margin-right: clamp(5rem, -3.37rem + 37.18vw, 41.25rem);
+  /* 360 1920 250 390 */
+  margin-top: clamp(15.625rem, 26.39rem + -8.97vw, 24.375rem);
 }
 
 .hero__tag-tg {
   position: absolute;
+  right: 0;
+  height: auto;
+  /* 1920 992 83 65 */
+  width: clamp(4.0625rem, 2.86rem + 1.94vw, 5.1875rem);
+  /* 1920 992 138 30 */
+  margin-right: clamp(1.875rem, -5.34rem + 11.64vw, 8.625rem);
+  /* 992 1920 400 355 */
+  margin-top: clamp(22.1875rem, 28.01rem + -4.85vw, 25rem);
+}
+
+@media (width <= 992px) {
+  .hero__tag-tg {
+    display: none;
+  }
 }
 
 /* Подвал секции с адаптивом */
