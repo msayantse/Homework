@@ -118,7 +118,7 @@
 }
 
 .halls__right-img {
-  width: 100%;
+  width: clamp(18.75rem, 2.78rem + 70.96vw, 87.9375rem);
   height: auto;
 }
 /* 
