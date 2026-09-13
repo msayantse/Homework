@@ -139,8 +139,8 @@
 
 .hero__button {
   display: flex;
-  /* 360 1920 120 73 */
-  padding-top: clamp(4.5625rem, 8.18rem + -3.01vw, 7.5rem);
+  position: relative;
+  z-index: var(--layer-1);
   /* 1920 360 54 0 */
   padding-right: clamp(0rem, 4.15rem + -3.46vw, 3.375rem);
 }
@@ -148,6 +148,9 @@
 @media (width > 1440px) {
   .hero__left {
     width: 883px;
+  }
+  .hero__button {
+    padding-top: 73px;
   }
 }
 
@@ -174,6 +177,9 @@
   .points__list {
     flex-direction: column;
   }
+  .hero__button {
+    padding-top: 35px;
+  }
 }
 
 @media (width <= 768px) {
@@ -183,6 +189,10 @@
 
   .hero__title {
     width: 240px;
+  }
+
+  .hero__button {
+    padding-top: 130px;
   }
 }
 
