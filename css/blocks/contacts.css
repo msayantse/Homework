@@ -1,0 +1,72 @@
+.contacts__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts__link,
+.contacts__geo-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+  z-index: var(--layer-3);
+}
+
+.contacts__icon {
+  color: var(--main-color);
+}
+
+.contacts__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-medium);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.contacts__link {
+  color: var(--main-color);
+}
+
+.contacts__geo-link {
+  color: var(--color-orange);
+}
+
+@media (width > 1200px) {
+  .contacts__geo-icon {
+    display: none;
+  }
+  .contacts__list {
+    align-items: center;
+  }
+}
+
+@media (width <= 1250px) {
+  .contacts__link-text,
+  .contacts__geo-link-text {
+    display: none;
+  }
+}
+
+@media (width <= 1200px) {
+  .contacts__geo-icon {
+    visibility: visible;
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  .contacts__list {
+    align-items: flex-start;
+  }
+
+  .contacts__link-text,
+  .contacts__geo-link-text {
+    display: initial;
+  }
+}
