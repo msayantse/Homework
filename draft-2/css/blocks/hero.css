@@ -161,6 +161,12 @@
   }
 }
 
+@media (width <= 992px) {
+  .benefits__list {
+    flex-direction: column;
+  }
+}
+
 @media (width <= 768px) {
   .hero__left {
     margin-right: 0;
@@ -170,10 +176,6 @@
     width: 240px;
   }
 
-  .benefits__list {
-    flex-direction: column;
-  }
-
   .hero__button {
     padding: 130px 54px 0 0;
   }
@@ -181,79 +183,24 @@
 
 /* Правая часть секции с адаптивом */
 
-.hero__right {
-  position: relative;
-  flex-grow: 1;
-  padding-right: 50px;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .hero__img {
-  position: absolute;
-  object-fit: contain;
-  object-position: top center;
-  width: 700px;
-  height: 1247px;
-  pointer-events: none;
   user-select: none;
+  position: absolute;
+  right: 0;
+  height: auto;
+  pointer-events: none;
   z-index: var(--negative-layer);
+  width: clamp(20.625rem, 15.29rem + 23.72vw, 43.75rem);
+  margin-top: clamp(-15.625rem, 16.68rem + -26.92vw, 10.625rem);
+  margin-right: clamp(-4.375rem, -9.34rem + 22.05vw, 17.125rem);
 }
 
 .hero__tag {
-  width: 269px;
+  position: absolute;
 }
 
-@media (width > 1440px) {
-  .hero__img {
-    top: -210px;
-    right: 210px;
-  }
-}
-
-@media (width <= 1440px) {
-  .hero__img {
-    top: -150px;
-    right: 90px;
-  }
-}
-
-@media (width <= 1340px) {
-  .hero__img {
-    top: -50px;
-  }
-}
-
-@media (width <= 1220px) {
-  .hero__right {
-    padding-right: 100px;
-  }
-
-  .hero__img {
-    top: 10px;
-    right: 90px;
-  }
-}
-
-@media (width <= 768px) {
-  .hero__right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-right: 0;
-  }
-
-  .hero__tag {
-  }
-
-  .hero__img {
-  }
-
-  .hero__tag-tg {
-    display: none;
-  }
+.hero__tag-tg {
+  position: absolute;
 }
 
 /* Подвал секции с адаптивом */
