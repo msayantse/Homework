@@ -15,7 +15,7 @@
   position: absolute;
   z-index: var(--negative-layer);
   width: 506px;
-  height: 900px;
+  height: 1100px;
   background-color: var(--color-gray);
   border: 1px solid var(--color-gray-text);
   border-top: none;
@@ -175,6 +175,10 @@
 
   .points__list {
     gap: 5px;
+  }
+
+  .hero__button {
+    padding-top: 50px;
   }
 }
 

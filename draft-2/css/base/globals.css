@@ -76,12 +76,18 @@ input:focus {
   margin-bottom: 20px;
 }
 
+@media (width <=1440px) {
+  .title-md {
+    font-size: 35px;
+  }
+}
+
 @media (width <=992px) {
   .title-big {
     font-size: 60px;
   }
   .title-md {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
@@ -105,6 +111,6 @@ input:focus {
   }
 
   .text-sm {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
