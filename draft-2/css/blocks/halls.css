@@ -33,8 +33,10 @@
 .halls__selection-list {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  padding-top: 76px;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  padding-top: clamp(0.9375rem, -1.6rem + 5.3vw, 4.75rem);
+  width: 415px;
 }
 
 .halls__selection-button {
@@ -55,25 +57,53 @@
 
 .halls__characteristics-img {
   padding-top: 35px;
+  width: 325px;
 }
 
-.characteristics__option {
+.characteristics__controls {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  padding-top: clamp(0.625rem, -0.54rem + 5.19vw, 5.6875rem);
+  gap: 31px;
 }
 
-.option__box {
+.characteristics__controls-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px;
-  border-color: var(--color-dark-gray);
-  padding: 0.5rem;
-  border-radius: 50%;
+  padding: 25px;
+  width: 70px;
+  height: auto;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 35px;
+}
+
+.characteristics__btn-next {
+  background-color: rgba(46, 52, 65, 1);
+}
+
+.characteristics__controls-current {
+  font-size: 24px;
+  color: var(--main-color);
+  padding-right: 5px;
+}
+
+.characteristics__controls-total {
+  font-size: 16px;
+  color: var(--color-gray-text);
 }
 
 .halls__button {
   padding-top: 73px;
+}
+
+.halls__img {
+  position: absolute;
+  right: 0;
+  z-index: var(--negative-layer);
+  width: clamp(23.4375rem, 8.55rem + 66.15vw, 87.9375rem);
+  height: auto;
+  padding:;
 }
 
 @media (width <= 1440px) {
@@ -83,18 +113,15 @@
 
   .halls__text {
     width: 350px;
-  }
-
-  .halls__text {
     padding-top: 15px;
-  }
-  .halls__selection-list {
-    padding-top: 50px;
   }
 
   .halls__button {
-    padding-top: 30px;
+    padding: 30px 17px 0 0;
   }
+}
+
+@media (width <= 992px) {
 }
 
 @media (width <= 768px) {
@@ -104,32 +131,20 @@
 
   .halls__selection-list {
     padding-top: 40px;
-    width: 320px;
-    flex-wrap: wrap;
+    width: 360px;
+  }
+
+  .halls__characteristics-img {
+    padding-top: clamp(18.75rem, 4.41rem + 63.73vw, 35rem);
+  }
+
+  .halls__img {
+    padding-top: 250px;
+    left: 0;
+    width: 100%;
   }
 
   .halls__button {
-    width: 223px;
+    padding: 30px 45px 0 0;
   }
 }
-
-.halls__right {
-  margin-left: auto;
-}
-
-.halls__right-img {
-  width: clamp(18.75rem, 2.78rem + 70.96vw, 87.9375rem);
-  height: auto;
-}
-/* 
-@media (width <= 1440px) {
-  .halls__right-img {
-    max-width: 940px;
-  }
-}
-
-@media (width <= 768px) {
-  .halls__right-img {
-    max-width: 510px;
-  }
-} */
