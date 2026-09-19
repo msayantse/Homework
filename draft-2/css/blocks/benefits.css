@@ -1,3 +1,7 @@
+.benefits {
+  position: relative;
+}
+
 .benefits__header {
   padding-top: 97px;
   display: flex;
@@ -21,18 +25,36 @@
   gap: 22px;
 }
 
+/* width: 1360px;
+height: 630px; */
+
+/* Карточки для разрешения экрана 1920 - 992px */
+
 .benefits__cards {
-  width: 1360px;
-  height: 630px;
   padding-top: 50px;
+  width: clamp(60.625rem, -12.5rem + 81.25vw, 85rem);
+  height: auto;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
+@media (width <= 1440px) {
+  .benefits__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 992px) {
+  .benefits__cards {
+    display: none;
+  }
+}
+
 .benefits__card {
-  width: 433px;
-  height: 298px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,6 +114,112 @@
   font-weight: 700px;
 }
 
+/* Карточки для разрешения экрана 992 - 360px */
+
+.benefits__cards-phn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  padding-top: 30px;
+  width: clamp(20.5625rem, 7.71rem + 57.12vw, 43.125rem);
+  gap: 30px;
+}
+
+@media (width > 992px) {
+  .benefits__cards-phn {
+    display: none;
+  }
+}
+
+.benefits__card-phn {
+  width: clamp(9.9375rem, 5.99rem + 17.56vw, 16.875rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__dress {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 129px;
+  gap: 11px;
+  background-color: var(--color-dark-gray);
+}
+
+.card__disc {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 272px;
+  gap: 11px;
+  background-color: var(--color-dark-card);
+}
+
+.card__people {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 173px;
+  gap: 11px;
+  background-color: var(--color-dark-card);
+}
+
+.card__center {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 144px;
+  gap: 11px;
+  background-color: var(--color-dark-gray);
+}
+
+.card__cash {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 224px;
+  gap: 11px;
+  background-color: var(--color-dark-gray);
+}
+
+.card__bottle {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 247px;
+  gap: 11px;
+  background-color: var(--color-dark-card);
+}
+.benefits__card-svg-phn {
+  width: clamp(2.5rem, 1.79rem + 3.16vw, 3.75rem);
+}
+
+.benefits__card-title-phn {
+  font-size: 14px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.benefits__card-text-phn {
+  font-size: 13px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-gray-light);
+}
+
+/* низ */
 .benefits__book {
   display: flex;
   flex-direction: column;
@@ -101,7 +229,11 @@
 
 .benefits__img {
   background-image: url("../../images/bg-microphone.png");
-  box-shadow: inset 0 0 74px 42px #191b20;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    var(--bg-color) -40%,
+    transparent 100%
+  );
 }
 
 .benefits__button {

@@ -1,4 +1,5 @@
 .halls__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -10,10 +11,22 @@
   flex-direction: row;
 }
 
+.halls__decor {
+  position: absolute;
+  z-index: var(--negative-layer);
+  width: 506px;
+  height: 600px;
+  background-color: var(--color-gray);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  border-bottom: none;
+  margin-left: 165px;
+}
+
 .halls__left {
   padding-top: 110px;
   flex-direction: column;
-  position: absolute;
+  position: relative;
 }
 
 .halls__title {
@@ -104,10 +117,13 @@
   z-index: var(--negative-layer);
   width: clamp(23.4375rem, 8.55rem + 66.15vw, 87.9375rem);
   height: auto;
-  padding:;
 }
 
 @media (width <= 1440px) {
+  .halls__decor {
+    width: 480px;
+  }
+
   .halls__left {
     padding-top: 70px;
   }
@@ -123,9 +139,17 @@
 }
 
 @media (width <= 992px) {
+  .halls__decor {
+    width: 430px;
+  }
 }
 
 @media (width <= 768px) {
+  .halls__decor {
+    width: 330px;
+    margin-left: 50px;
+  }
+
   .halls__left {
     padding-top: 30px;
   }
@@ -147,5 +171,12 @@
 
   .halls__button {
     padding: 30px 45px 0 0;
+  }
+}
+
+@media (width <500px) {
+  .halls__decor {
+    width: 233px;
+    margin-left: 68px;
   }
 }
