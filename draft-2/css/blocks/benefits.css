@@ -117,12 +117,11 @@ height: 630px; */
 /* Карточки для разрешения экрана 992 - 360px */
 
 .benefits__cards-phn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  width: clamp(20.5625rem, 7.71rem + 57.12vw, 43.125rem);
-  gap: 30px;
+  width: clamp(20.25rem, 12.13rem + 36.08vw, 34.5rem);
+  gap: 12px;
 }
 
 @media (width > 992px) {
@@ -131,11 +130,31 @@ height: 630px; */
   }
 }
 
-.benefits__card-phn {
-  width: clamp(9.9375rem, 5.99rem + 17.56vw, 16.875rem);
+.cards__left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 12px;
+}
+
+.cards__right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits__double-line-phn {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__line-phn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.benefits__accent-p-phn {
+  color: var(--color-orange);
 }
 
 .card__dress {
@@ -144,7 +163,6 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 129px;
-  gap: 11px;
   background-color: var(--color-dark-gray);
 }
 
@@ -154,7 +172,6 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 272px;
-  gap: 11px;
   background-color: var(--color-dark-card);
 }
 
@@ -164,7 +181,6 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 173px;
-  gap: 11px;
   background-color: var(--color-dark-card);
 }
 
@@ -174,7 +190,6 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 144px;
-  gap: 11px;
   background-color: var(--color-dark-gray);
 }
 
@@ -184,7 +199,6 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 224px;
-  gap: 11px;
   background-color: var(--color-dark-gray);
 }
 
@@ -194,11 +208,7 @@ height: 630px; */
   flex-direction: column;
   justify-content: center;
   height: 247px;
-  gap: 11px;
   background-color: var(--color-dark-card);
-}
-.benefits__card-svg-phn {
-  width: clamp(2.5rem, 1.79rem + 3.16vw, 3.75rem);
 }
 
 .benefits__card-title-phn {
@@ -207,7 +217,6 @@ height: 630px; */
   font-weight: 800;
   line-height: 133%;
   letter-spacing: 0.03em;
-  color: #fff;
 }
 
 .benefits__card-text-phn {
