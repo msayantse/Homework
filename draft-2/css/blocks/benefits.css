@@ -25,6 +25,12 @@
   gap: 22px;
 }
 
+@media (width <=992px) {
+  .benefits__body {
+    flex-direction: column;
+  }
+}
+
 /* width: 1360px;
 height: 630px; */
 
@@ -117,11 +123,12 @@ height: 630px; */
 /* Карточки для разрешения экрана 992 - 360px */
 
 .benefits__cards-phn {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 30px;
-  width: clamp(20.25rem, 12.13rem + 36.08vw, 34.5rem);
   gap: 12px;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 @media (width > 992px) {
@@ -151,6 +158,7 @@ height: 630px; */
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-top: 13px;
 }
 
 .benefits__accent-p-phn {
@@ -217,6 +225,7 @@ height: 630px; */
   font-weight: 800;
   line-height: 133%;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .benefits__card-text-phn {
@@ -228,23 +237,51 @@ height: 630px; */
   color: var(--color-gray-light);
 }
 
-/* низ */
+/* Микро и кнопка забронировать */
+
 .benefits__book {
   display: flex;
   flex-direction: column;
   gap: 45px;
   align-items: center;
+  justify-content: center;
 }
 
-.benefits__img {
-  background-image: url("../../images/bg-microphone.png");
-  -webkit-mask-image: radial-gradient(
-    circle,
-    var(--bg-color) -40%,
-    transparent 100%
-  );
+.benefits__img-bg {
+  position: absolute;
+  z-index: var(--negative-layer);
+  box-shadow: inset 0 0 27px 12px rgba(25, 27, 32, 1);
+  opacity: 0.38;
 }
 
-.benefits__button {
-  margin-top: auto;
+@media (width <= 992px) {
+  .benefits__book {
+    display: none;
+  }
+}
+
+.benefits__book-phn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 590px;
+  margin-left: clamp(0rem, -8.9rem + 39.56vw, 15.625rem);
+}
+
+@media (width > 992px) {
+  .benefits__book-phn {
+    display: none;
+  }
+}
+
+.benefits__img-bg-phn {
+  position: absolute;
+  z-index: var(--negative-layer);
+  box-shadow: inset 0 0 27px 12px rgba(25, 27, 32, 1);
+  opacity: 0.38;
+}
+
+.benefits__button-phn {
+  margin-top: 58px;
+  z-index: var(--layer-1);
 }

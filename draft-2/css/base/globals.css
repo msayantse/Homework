@@ -32,7 +32,7 @@
 
 .container {
   width: min(var(--container-width), 100% - var(--container-padding) * 2);
-  margin-right: 0;
+  margin-right: auto;
   margin-left: auto;
 }
 @media (width <=768px) {
