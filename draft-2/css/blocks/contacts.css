@@ -49,7 +49,8 @@
 
 @media (width <= 1250px) {
   .contacts__link-text,
-  .contacts__geo-link-text {
+  .contacts__geo-link-text,
+  .contacts__link-text-ftr {
     display: none;
   }
 }
@@ -69,4 +70,20 @@
   .contacts__geo-link-text {
     display: initial;
   }
+}
+
+.contacts__list-ftr {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (width <= 768px) {
+  .contacts__list-ftr {
+    display: none;
+  }
+}
+
+.contacts__list-ftr-phn {
+  display: flex;
+  flex-direction: column-reverse;
 }
