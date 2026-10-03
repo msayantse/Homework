@@ -174,7 +174,8 @@ summary::webkit-details-marker {
     gap: 45px;
     align-items: center;
     justify-content: center;
-    width: clamp(18.75rem, -13.79rem + 52.48vw, 49.1875rem);
+    width: clamp(27.75rem, -13.79rem + 52.48vw, 49.1875rem);
+    /* width: clamp(18.75rem, -13.79rem + 52.48vw, 49.1875rem); */
     margin: 0 auto;
   }
 }

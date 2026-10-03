@@ -64,6 +64,8 @@
   }
   .contacts__list {
     align-items: flex-start;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .contacts__link-text,
