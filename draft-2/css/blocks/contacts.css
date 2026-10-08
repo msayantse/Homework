@@ -49,8 +49,7 @@
 
 @media (width <= 1250px) {
   .contacts__link-text,
-  .contacts__geo-link-text,
-  .contacts__link-text-ftr {
+  .contacts__geo-link-text {
     display: none;
   }
 }
@@ -79,7 +78,7 @@
   justify-content: flex-start;
 }
 
-@media (width <= 768px) {
+@media (width <= 1440px) {
   .contacts__list-ftr {
     display: none;
   }

@@ -11,7 +11,7 @@
   gap: 15px;
 }
 
-.hero__decor {
+/* .hero__decor {
   position: absolute;
   z-index: var(--negative-layer);
   width: 506px;
@@ -22,7 +22,7 @@
   border-bottom: none;
   margin-left: 165px;
   top: -253px;
-}
+} */
 
 .hero__background {
   position: absolute;
