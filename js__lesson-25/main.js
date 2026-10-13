@@ -23,12 +23,12 @@ console.log(`Факториал числа ${n} равен:`, factorial);
 
 let board = "";
 
-for (let row = 1; row <= 8; row++) {
-    let row = "";
-    for (let col = 1; col <= 8; col++) {
-    row +=
-    }
+for (let r = 1; r <= 8; r++) {
+  let row = "";
+  for (let line = 1; line <= 8; line++) {
+    row += "Ч";
+  }
+  board += row + "\n";
 }
-
 
 console.log(board);
