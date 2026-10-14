@@ -1,0 +1,54 @@
+const calculateFinalPrice = (price, discountPercent, taxRate) => {
+  const discount = price * (discountPercent / 100);
+  const discountedPrice = price - discount;
+  const tax = discountedPrice * taxRate;
+  return discountedPrice + tax;
+};
+
+// console.log(calculateFinalPrice(100, 10, 0.2)); // 108
+// console.log(calculateFinalPrice(100, 10, 0)); // 90
+
+const checkAccess = (username, password) =>
+  username === "admin" && password === "123456"
+    ? "Доступ разрешен"
+    : "Доступ запрещен";
+
+
+const getTimeOfDay = (hour) => {
+  switch (true) {
+    case hour >= 0 && <= 5:
+      return "Ночь";
+    case hour   >= 6 && <= 11:
+      return "Утро";
+    case hour   >= 12 && <= 17:
+      return "День";
+     case hour   >= 18 && <= 23:
+      return "Вечер";
+    default: 
+    return "Некорректное время";
+  }
+};
+
+constfindFirstEven = (start, end) => {
+  if (start > end) return "Некорректный диапазон";
+
+  const firstEven = start % 2 === 0 ? start : start + 1;
+
+  return firstEven <= end ? firstEven : "Четных чисел нет";
+};
+
+constfindEven = (start, end) => {
+  if (start > end) return "Некорректный диапазон";
+
+  let numbers = "";
+
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      numbers += i + "\n";
+    }
+  }
+
+  return numbers || "Четных чисел нет"
+  };
+
+alert (findEven(1, 13));
