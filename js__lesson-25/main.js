@@ -13,20 +13,21 @@ const number = Number(prompt("Введите число:"));
 
 let factorial = 1;
 
-for (let i = 1; i <= Number; i++) {
+for (let i = 1; i <= number; i++) {
   factorial *= i;
 }
 
-console.log(`Факториал числа ${n} равен:`, factorial);
+console.log(`Факториал числа ${number} равен:`, factorial);
 
 // Задача 3
 
+const boardSize = 8;
 let board = "";
 
-for (let r = 1; r <= 8; r++) {
+for (let i = 1; 1 <= boardSize; i++) {
   let row = "";
-  for (let line = 1; line <= 8; line++) {
-    row += "Ч";
+  for (let j = 1; j <= boardSize; j++) {
+    row += (i + j) % 2 === 0 ? "Ч " : "Б";
   }
   board += row + "\n";
 }
