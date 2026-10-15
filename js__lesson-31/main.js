@@ -13,19 +13,18 @@ const checkAccess = (username, password) =>
     ? "Доступ разрешен"
     : "Доступ запрещен";
 
-
 const getTimeOfDay = (hour) => {
   switch (true) {
-    case hour >= 0 && <= 5:
+    case hour >= 0 && hour <= 5:
       return "Ночь";
-    case hour   >= 6 && <= 11:
+    case hour >= 6 && hour <= 11:
       return "Утро";
-    case hour   >= 12 && <= 17:
+    case hour >= 12 && hour <= 17:
       return "День";
-     case hour   >= 18 && <= 23:
+    case hour >= 18 && hour <= 23:
       return "Вечер";
-    default: 
-    return "Некорректное время";
+    default:
+      return "Некорректное время";
   }
 };
 
@@ -37,7 +36,7 @@ constfindFirstEven = (start, end) => {
   return firstEven <= end ? firstEven : "Четных чисел нет";
 };
 
-constfindEven = (start, end) => {
+const findEven = (start, end) => {
   if (start > end) return "Некорректный диапазон";
 
   let numbers = "";
@@ -48,7 +47,7 @@ constfindEven = (start, end) => {
     }
   }
 
-  return numbers || "Четных чисел нет"
-  };
+  return numbers || "Четных чисел нет";
+};
 
-alert (findEven(1, 13));
+alert(findEven(1, 13));
