@@ -45,6 +45,21 @@
   padding-right: 53px;
 }
 
+.footer__button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid var(--color-orange);
+  display: flex;
+  width: fit-content;
+  border-radius: 90px;
+  padding: 21px 40px;
+}
+
 @media (width <= 992px) {
   .footer__item {
     padding-right: 20px;

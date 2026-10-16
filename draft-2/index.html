@@ -17,7 +17,6 @@
     <title>Xarizma</title>
   </head>
   <body class="page__body">
-    <div class="header__hero">
     <header class="header">
       <div class="container header__container">
         <a href="" class="logo header__logo">
@@ -70,18 +69,14 @@
           <nav class="actions header__actions">
             <ul class="actions__list">
               <li class="actions__item">
-                <a class="actions__link" href="#halls">
-                  <button>
-                    <img src="./icons/halls-button.svg" alt="Наши залы" />
-                  </button>
-                </a>
+                  <button class="actions__button-halls" >
+                    Наши залы
+                  </button> 
               </li>
               <li class="actions__item">
-                <a class="actions__link">
-                  <button data-modal-button="book" data-modal-speed="500">
-                    <img src="./icons/book-button.svg" alt="Забронировать" />
-                  </button>
-                </a>
+                  <button class="actions__button-book" >
+                    Забронировать
+                  </button> 
               </li>
             </ul>
           </nav>
@@ -117,14 +112,13 @@
         </button>
       </div>
     </header>
-     <main class="main">
+    <main class="main">
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__body">
-            <!-- <div class="hero__decor"></div> -->
-            <div class="hero__background">
+            <!-- <div class="hero__background">
               <img src="./images/hero-bg.png" alt="">
-            </div>
+            </div> -->
             <div class="hero__left">
               <header class="hero__header">
                 <div class="hero__title">
@@ -168,15 +162,9 @@
                   </li></span>
                 </ul>
               </div>
-                <button>
-                  <img
-                    class="hero__button"
-                    src="./icons/book-online_button.svg"
-                    alt="Кнопка забронировать"
-                    width="277"
-                    height="70"
-                  />
-                </button>
+                <button class="hero__button" >
+                    Забронировать онлайн
+                  </button> 
             </div>
               <img
                 class="hero__img"
@@ -185,11 +173,12 @@
                 width="700"
                 height="1247"
               />
-              <img
-                class="hero__tag"
-                src="./icons/tag.svg"
-                alt="Бирка шуметь можно круглосуточно"
-              />
+              <div class="hero__tag">
+                <img class="hero__ellipse" src="./icons/tag.svg" alt="Бирка">
+                <p class="hero__tag-text"> Можно шуметь 
+               <br>
+               <span class="hero__tag-accent">Круглосуточно</span> </p>
+              </div>
               <img
                 class="hero__tag-tg"
                 src="./icons/tg-button.svg"
@@ -198,7 +187,6 @@
                 height="239"
               />
           </div>
-        </div>
         <footer class="hero__footer">
           <div class="footer__benefits">
             <div class="footer__item-bnf item__odd">
@@ -237,7 +225,7 @@
             </div>
           </div>
         </footer>
-      </section> </div>
+      </section>
      <section id="halls" class="halls">
         <div class="halls__container container">
           <div class="halls__body">
@@ -274,15 +262,9 @@
             </button>
               </div>
          </div>
-            <a href="#book">
-              <img
-                class="halls__button"
-                src="./icons/book-button-2.svg"
-                alt="Кнопка забронировать"
-                width="277"
-                height="70"
-              />
-              </a>
+           <button class="halls__button" >
+                    Забронировать
+                  </button> 
           </div>
            <div class="halls__img">
             <img 
@@ -663,9 +645,9 @@
               src="./images/microphone.png" alt="микрофон">
               <img class="benefits__img-bg" src="./images/bg-microphone.png" alt="кирпичный фон позади микрофона">
               
-              <button class="benefits__button">
-                <img src="./icons/book-hall-button.svg" alt="кнопка забронировать зал">
-              </button>
+              <button class="benefits__button" >
+                    Забронировать зал
+                  </button> 
             </div>
             <div class="benefits__book-phn">
               <img class="benefits__img-phn"
@@ -678,7 +660,7 @@
                src="./images/bg-microphone.png" alt="кирпичный фон позади микрофона">
                </div>
               <button class="benefits__button-phn">
-                <img src="./icons/book-hall-button-phn.svg" alt="кнопка забронировать зал">
+                Забронировать зал
               </button>
            
           </div>
@@ -762,10 +744,9 @@
                 src="./images/slippers.png" 
                 alt="Тапочки"> 
                 <img src="./images/bg-microphone.png" class="faq__img-bg" alt="">
-                <a href="#book">
                 <button class="faq__button">
-                <img src="./icons/book-hall-button.svg" alt="кнопка забронировать зал">
-              </button></a>
+                  Забронировать зал
+              </button>
               </div> 
               <div class="faq__right-phn">
                 <p class="faq__right-text-phn">
@@ -778,10 +759,7 @@
                 src="./images/slippers.png" 
                 alt="Тапочки"> 
                 <img src="./images/bg-microphone.png" class="faq__img-bg-phn" alt="">
-                <a href="#book">
-                <button class="faq__button">
-                <img src="./icons/book-hall-button.svg" alt="кнопка забронировать зал">
-              </button></a>
+               <button class="faq__button-phn"> Забронировать зал</button>
               </div> 
             </div>
           </div>
@@ -847,9 +825,7 @@
               </li>
             </ul>
           </nav>
-          <a class="actions__link footer__button">
-                  <button data-modal-button="book" data-modal-speed="500">
-                    <img src="./icons/route-button.svg" alt="Забронировать" />
+                  <button class="actions__link footer__button"> Построить маршрут
                   </button>
                 </a>
         </div>
@@ -895,15 +871,14 @@
             <ul class="actions__list-ftr">
               <li class="actions__item">
                 <a class="actions__link" href="#halls">
-                  <button>
-                    <img src="./icons/halls-button.svg" alt="Наши залы" />
+                  <button class="actions__button-halls">
+                    Наши залы
                   </button>
                 </a>
               </li>
               <li class="actions__item">
-                <a class="actions__link">
-                  <button data-modal-button="book" data-modal-speed="500">
-                    <img src="./icons/book-button.svg" alt="Забронировать" />
+                  <button class="actions__button-book">
+                    Забронировать
                   </button>
                 </a>
               </li>

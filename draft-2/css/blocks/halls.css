@@ -108,7 +108,24 @@
 }
 
 .halls__button {
-  padding-top: 73px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #252121;
+  background: linear-gradient(
+    93.25deg,
+    #ea422a 0%,
+    #f69020 48.83%,
+    #ffc619 101.91%
+  );
+  display: flex;
+  width: fit-content;
+  border-radius: 90px;
+  padding: 21px 60px;
+  margin-top: 61px;
 }
 
 .halls__img {
@@ -131,10 +148,6 @@
   .halls__text {
     width: 350px;
     padding-top: 15px;
-  }
-
-  .halls__button {
-    padding: 30px 17px 0 0;
   }
 }
 
@@ -167,10 +180,6 @@
     padding-top: 250px;
     left: 0;
     width: 100%;
-  }
-
-  .halls__button {
-    padding: 30px 45px 0 0;
   }
 }
 
