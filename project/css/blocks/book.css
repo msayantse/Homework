@@ -1,0 +1,16 @@
+.book__header {
+  padding-top: 97px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book__title {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  z-index: var(--layer-3);
+}
+
+.book__text {
+  padding-top: 40px;
+}

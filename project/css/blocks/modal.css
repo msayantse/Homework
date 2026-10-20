@@ -1,0 +1,120 @@
+.modal {
+  --transition-time: 0.2s;
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-3);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--bg-color2);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition-time),
+    visibility var(--transition-time);
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal__window {
+  position: relative;
+  display: none;
+  width: clamp(20rem, 14.52rem + 24.36vw, 43.75rem);
+  height: 200px;
+  margin-block: 50px;
+  vertical-align: middle;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 20px var(--color-gray-medium);
+}
+
+.modal-book__title {
+  padding-top: 40px;
+}
+
+.modal-book__form {
+  display: inline-flex;
+  gap: 30px;
+}
+
+.modal-book__input {
+  display: inline-block;
+  width: clamp(12.5rem, 11.78rem + 3.21vw, 15.625rem);
+  height: clamp(1.25rem, 0.96rem + 1.28vw, 2.5rem);
+  border-radius: 8px;
+  border: var(--color-black);
+  padding-left: 50px;
+}
+
+.modal-book__submit {
+  display: inline-block;
+  width: clamp(12.5rem, 11.78rem + 3.21vw, 15.625rem);
+  height: clamp(1.25rem, 0.96rem + 1.28vw, 2.5rem);
+  color: var(--main-color);
+  background: linear-gradient(to right, #f69020, #ffc619);
+
+  border-radius: 8px;
+}
+
+.modal__window--open {
+  display: inline-block;
+}
+
+.modal__cross {
+  width: 22px;
+  height: 22px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (width <= 1440px) {
+  .modal-book__form {
+    gap: 15px;
+  }
+
+  .modal__cross {
+    width: 20px;
+    height: 20px;
+  }
+  .modal__close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (width < 1200px) {
+  .modal-book__form {
+    flex-direction: column;
+  }
+}
+
+@media (width <= 768px) {
+  .modal__cross {
+    width: 18px;
+    height: 18px;
+  }
+  .modal__close {
+    width: 18px;
+    height: 18px;
+    top: 20px;
+    right: 20px;
+  }
+}
