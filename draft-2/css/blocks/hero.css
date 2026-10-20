@@ -224,7 +224,48 @@
   margin-right: clamp(-4.375rem, -9.34rem + 22.05vw, 17.125rem);
 }
 
-hero__tag-text,
+.hero__tag {
+  position: relative;
+}
+
+.hero__tag-text {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  height: auto;
+  /* 1920 360 660 80 */
+  margin-right: clamp(5rem, -3.37rem + 37.18vw, 41.25rem);
+  /* 360 1920  */
+  margin-top: clamp(24.375rem, 28.61rem + -3.53vw, 27.8125rem);
+}
+
+.hero__tag-accent {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 86%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  background: linear-gradient(180deg, #ffc619 0%, #f69020 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (width <= 768px) {
+  .hero__tag-text {
+    font-size: 12px;
+  }
+  .hero__tag-accent {
+    font-size: 14px;
+  }
+}
+
 .hero__ellipse {
   position: absolute;
   right: 0;
